@@ -1,0 +1,55 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usepackage{verbatim}
+
+% for maths
+\usepackage{
+    mathptmx,
+    amsmath,
+    amssymb
+}
+
+\usepackage{natbib}
+
+% for tables
+\usepackage{longtable}
+
+% for images
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+% custom symbols
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+
+\title{ Title }
+\author{ Author }
+
+\begin{document}
+
+\begin{center}
+    \huge{\textbf{ Document Title }} \\
+    \huge{\textbf{ Sub Title }}\\
+    \hspace{200pt}\\
+    \textsc{ Short description of } \\
+    \textsc{ the document }
+    \vspace{280pt}\\
+    \textsc{ Your Name }
+\end{center}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introduction}
+
+\newpage
+\section{References}
+
+\end{document}
