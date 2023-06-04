@@ -2,27 +2,28 @@
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
-\usepackage{helvet}
-\renewcommand{\familydefault}{\sfdefault}
-
 \usepackage[dvipsnames]{xcolor}
-\usepackage{tikz}
-\usepackage{verbatim}
 
-% for maths
+% document styling
+\usepackage{helvet, titlesec}
+\renewcommand{\familydefault}{\sfdefault}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
 \usepackage{
+    tikz,
+    verbatim, % multi line comments
+    listings, % for inline code
+    natbib, % references
+    graphicx, % images
+    % for maths
     mathptmx,
     amsmath,
-    amssymb
+    amssymb,
+    longtable
 }
 
-\usepackage{natbib}
-
-% for tables
-\usepackage{longtable}
-
-% for images
-\usepackage{graphicx}
 \graphicspath{ {./images/} }
 
 % custom symbols
